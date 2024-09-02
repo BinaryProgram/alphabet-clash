@@ -24,23 +24,21 @@
       class="min-h-screen bg-[url(images/background.png)] bg-center bg-no-repeat"
     >
       <!-- play section -->
-      <section
-        class="play flex hidden min-h-screen items-center justify-center"
-      >
+      <section id="play" class="flex min-h-screen items-center justify-center">
         <div class="flex flex-col items-center">
-          <h1 class="font-[anton] text-[170px] text-white">ALPHABET CLASH</h1>
+          <h1 class="font-[anton] text-[170px] text-white text-center">ALPHABET CLASH</h1>
           <p class="font-[poppins] text-2xl font-medium text-white">
             Unleash Your Keyboard Kung Fu : Press “Enter” to Play
           </p>
           <button
-            class="btn btn-active btn-accent mt-8 rounded-lg border-none bg-[#fff] font-[poppins] text-2xl font-semibold text-[#010313]"
+            class="btn btn-active btn-accent mt-8 rounded-lg border-none bg-[#fff] font-[poppins] text-2xl font-semibold text-[#010313]" onclick="letsPlay()"
           >
             Play Now
           </button>
         </div>
       </section>
       <!-- play ground section -->
-      <section class="play-ground">
+      <section id="play-ground" class="hidden">
         <div class="flex flex-col items-center justify-center">
           <div
             class="artboard-horizontal phone-3 mt-10 flex min-h-60 w-3/4 flex-col items-center gap-10 rounded-2xl border-[20px] border-[#010313cc] bg-[#ffffffb3]"
@@ -50,43 +48,43 @@
             >
               Don't watch keyboard while playing...
             </p>
-            <p class="font-[poppins] text-7xl font-semibold text-[#010313]">
+            <p class="font-[poppins] text-7xl font-semibold text-[#010313] uppercase" id="present-text">
               Y
             </p>
           </div>
-          <div class="mt-5 text-2xl space-y-4">
+          <div class="mt-5 space-y-4 text-2xl">
             <div class="my-1 flex w-full justify-center gap-1">
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">q</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">w</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">e</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">r</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">t</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">y</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">u</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">i</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">o</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">p</kbd>
+              <kbd id="q" class="kbd bg-white font-[inter] text-[#010313]">q</kbd>
+              <kbd id="w" class="kbd bg-white font-[inter] text-[#010313]">w</kbd>
+              <kbd id="e" class="kbd bg-white font-[inter] text-[#010313]">e</kbd>
+              <kbd id="r" class="kbd bg-white font-[inter] text-[#010313]">r</kbd>
+              <kbd id="t" class="kbd bg-white font-[inter] text-[#010313]">t</kbd>
+              <kbd id="y" class="kbd bg-white font-[inter] text-[#010313]">y</kbd>
+              <kbd id="u" class="kbd bg-white font-[inter] text-[#010313]">u</kbd>
+              <kbd id="i" class="kbd bg-white font-[inter] text-[#010313]">i</kbd>
+              <kbd id="o" class="kbd bg-white font-[inter] text-[#010313]">o</kbd>
+              <kbd id="p" class="kbd bg-white font-[inter] text-[#010313]">p</kbd>
             </div>
             <div class="my-1 flex w-full justify-center gap-1">
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">a</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">s</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">d</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">f</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">g</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">h</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">j</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">k</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">l</kbd>
+              <kbd id="a" class="kbd bg-white font-[inter] text-[#010313]">a</kbd>
+              <kbd id="s" class="kbd bg-white font-[inter] text-[#010313]">s</kbd>
+              <kbd id="d" class="kbd bg-white font-[inter] text-[#010313]">d</kbd>
+              <kbd id="f" class="kbd bg-white font-[inter] text-[#010313]">f</kbd>
+              <kbd id="g" class="kbd bg-white font-[inter] text-[#010313]">g</kbd>
+              <kbd id="h" class="kbd bg-white font-[inter] text-[#010313]">h</kbd>
+              <kbd id="j" class="kbd bg-white font-[inter] text-[#010313]">j</kbd>
+              <kbd id="k" class="kbd bg-white font-[inter] text-[#010313]">k</kbd>
+              <kbd id="l" class="kbd bg-white font-[inter] text-[#010313]">l</kbd>
             </div>
             <div class="my-1 flex w-full justify-center gap-1">
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">z</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">x</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">c</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">v</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">b</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">n</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">m</kbd>
-              <kbd class="kbd bg-white font-[inter] text-[#010313]">/</kbd>
+              <kbd id="z" class="kbd bg-white font-[inter] text-[#010313]">z</kbd>
+              <kbd id="x" class="kbd bg-white font-[inter] text-[#010313]">x</kbd>
+              <kbd id="c" class="kbd bg-white font-[inter] text-[#010313]">c</kbd>
+              <kbd id="v" class="kbd bg-white font-[inter] text-[#010313]">v</kbd>
+              <kbd id="b" class="kbd bg-white font-[inter] text-[#010313]">b</kbd>
+              <kbd id="n" class="kbd bg-white font-[inter] text-[#010313]">n</kbd>
+              <kbd id="m" class="kbd bg-white font-[inter] text-[#010313]">m</kbd>
+              <kbd id="/" class="kbd bg-white font-[inter] text-[#010313]">/</kbd>
             </div>
           </div>
           <div class="mt-10 flex h-1/3 w-3/4 justify-between">
@@ -107,8 +105,40 @@
         </div>
       </section>
       <!-- score section -->
-      <section class="score"></section>
+      <section class="flex h-screen items-center justify-center hidden">
+        <div
+          class="score-background relative flex flex-col items-center justify-center space-y-7 rounded-xl border-2 border-[#ffffff33] p-8"
+        >
+          <span class="absolute left-0 h-full w-full overflow-hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="151"
+              height="282"
+              viewBox="0 0 151 282"
+              fill="none"
+            >
+              <path
+                d="M0 16C0 7.16345 7.16344 0 16 0H134.997C145.251 0 152.858 9.51088 150.606 19.5148L94.3114 269.515C92.6677 276.814 86.1845 282 78.7022 282H16C7.16344 282 0 274.837 0 266V16Z"
+                fill="white"
+                fill-opacity="0.07"
+              />
+            </svg>
+          </span>
+          <h1 class="font-[poppins] text-6xl font-extrabold text-white">
+            Score : 14
+          </h1>
+          <button
+            class="btn btn-active btn-accent z-10 mt-8 rounded-lg border-none bg-[#fff] font-[poppins] text-2xl font-semibold text-[#010313]"
+          >
+            Play Again
+          </button>
+          <h3 class="text-xl font-medium text-white">
+            Practice will make you Pro
+          </h3>
+        </div>
+      </section>
     </main>
+    <script src="/js/reuse.js"></script>
     <script src="/js/script.js"></script>
   </body>
 </html>
